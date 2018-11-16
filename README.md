@@ -9,4 +9,10 @@ Here we present a Scalable VHDL design tool flow which  is automated, with error
 ![f1-1](https://user-images.githubusercontent.com/35568574/48627352-a8317a00-e9b4-11e8-93f0-346362504236.jpg)
 
 
+
+#Varaints of Tool flow
+
+
+![f6](https://user-images.githubusercontent.com/35568574/48627673-74a31f80-e9b5-11e8-89ad-0e96c9fab55c.jpeg)
+
 https://github.com/vijaykumarvg1/Scalable-FPGA-design-Tool-Flow/issues/1#issue-381620953
