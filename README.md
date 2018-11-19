@@ -27,7 +27,8 @@ This source files consists of four Intermediate VHDl design files in order to ru
   #Dependencies
 The user should provide the following dependencies:
 •	A UNIX operating system (tools used: gcc, bash, minicom, curl, stty, ...)
-•	Quartus II (tested with Web Edition version 11.0 SP1), Altera Corporation, http://www.altera.com
-•	Java (tested with version 1.6.0), Oracle, http://www.java.com
+•	Xilinx Vivado (tested with Vivado version 2013.2, 64bit), Xilinx Corporation, http://www.xilinx.com
+•	TCL scripting
+•	Shell scripting
 •	Python 2.7, http://www.python.org
 
