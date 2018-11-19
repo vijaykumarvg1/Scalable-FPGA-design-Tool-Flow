@@ -18,7 +18,7 @@ Here we present a Scalable VHDL design tool flow which  is automated, with error
 https://github.com/vijaykumarvg1/Scalable-FPGA-design-Tool-Flow/issues/1#issue-381620953
 
 
-Tool flow source files contains the original code for scalable VHDl design tool flow, in that you need run the file name scalable.py file for the trade off branch off tool flow, and tripleDES.py file for the implementation branch of tool flow. 
+Tool flow source files consists the original code for scalable VHDl design tool flow, in that you need run the file name scalable.py file for the trade off branch off the tool flow, and tripleDES.py file for the implementation branch of the tool flow. 
 
 This source files consists of four Intermediate VHDl design files in order to run the both types of the tool flow.(design1.vhd, design2.vhd, design3.vhd, design4.vhd)
 
