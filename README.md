@@ -22,3 +22,12 @@ Tool flow source files consists the original code for scalable VHDl design tool 
 
 This source files consists of four Intermediate VHDl design files in order to run the both types of the tool flow.(design1.vhd, design2.vhd, design3.vhd, design4.vhd)
 
+##Dependencies
+
+The user should provide the following dependencies:
+
+A UNIX operating system (tools used: gcc, bash, minicom, curl, stty, ...)
+Xilinx Vivado (tested with Vivado version 2013.2, 64 bit), Xilinx Corporation, http://www.xilinx.com
+TCL scripting
+Shell scripting
+Python 2.7, http://www.python.org
