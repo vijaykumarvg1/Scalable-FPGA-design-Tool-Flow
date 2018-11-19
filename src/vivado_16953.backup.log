@@ -1,0 +1,547 @@
+#-----------------------------------------------------------
+# Vivado v2013.2 (64-bit)
+# Build 272601 by xbuild on Sat Jun 15 11:11:11 MDT 2013
+# Start of session at: Tue Nov 13 13:16:18 2018
+# Process ID: 16837
+# Log file: /home/vguddad/private/Desktop/new/scalablity/vj/test/vivado.log
+# Journal file: /home/vguddad/private/Desktop/new/scalablity/vj/test/vivado.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: Implementation
+INFO: [Common 17-81] Feature available: Implementation
+INFO: [Common 17-78] Attempting to get a license: Synthesis
+INFO: [Common 17-81] Feature available: Synthesis
+INFO: [Device 21-36] Loading parts and site information from /ecad/xilinxise_14.6/Vivado/2013.2/data/parts/arch.xml
+Parsing RTL primitives file [/ecad/xilinxise_14.6/Vivado/2013.2/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [/ecad/xilinxise_14.6/Vivado/2013.2/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+INFO: [Common 17-362] Using Tcl App repository from '/ecad/xilinxise_14.6/Vivado/2013.2/data/XilinxTclStore'.
+INFO: [Common 17-364] Updating Tcl app persistent manifest '/home/vguddad/private/.Xilinx/Vivado/tclapp/manifest.tcl'
+source recon.tcl
+# read_vhdl ./design4_recon.vhd
+# set outputDir ./design4_recon
+# file mkdir $outputDir
+# synth_design -top design4_recon -part xc7z020clg400-1
+Command: synth_design -top design4_recon -part xc7z020clg400-1
+
+Starting synthesis...
+
+INFO: [Common 17-347] Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+Xilinx IP preload is disabled
+starting synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 180.016 ; gain = 63.508
+INFO: [Synth 8-638] synthesizing module 'design4_recon' [/home/vguddad/private/Desktop/new/scalablity/vj/test/design4_recon.vhd:54]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: dynamic assertion statement [/home/vguddad/private/Desktop/new/scalablity/vj/test/design4_recon.vhd:82]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: dynamic assertion statement [/home/vguddad/private/Desktop/new/scalablity/vj/test/design4_recon.vhd:84]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: dynamic assertion statement [/home/vguddad/private/Desktop/new/scalablity/vj/test/design4_recon.vhd:95]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: dynamic assertion statement [/home/vguddad/private/Desktop/new/scalablity/vj/test/design4_recon.vhd:97]
+INFO: [Synth 8-256] done synthesizing module 'design4_recon' (1#1) [/home/vguddad/private/Desktop/new/scalablity/vj/test/design4_recon.vhd:54]
+finished synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 212.102 ; gain = 95.594
+Start RTL Optimization : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 212.102 ; gain = 95.594
+---------------------------------------------------------------------------------
+Finished Compilation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 212.102 ; gain = 95.594
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
+-----+-------------+-----------+---------
+     |RTL Partition|Replication|Instances
+-----+-------------+-----------+---------
+-----+-------------+-----------+---------
+
+---------------------------------------------------------------------------------
+Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+Loading clock regions from /ecad/xilinxise_14.6/Vivado/2013.2/data/parts/xilinx/zynq/zynq/xc7z020/ClockRegion.xml
+Loading clock buffers from /ecad/xilinxise_14.6/Vivado/2013.2/data/parts/xilinx/zynq/zynq/xc7z020/ClockBuffers.xml
+Loading clock placement rules from /ecad/xilinxise_14.6/Vivado/2013.2/data/parts/xilinx/zynq/ClockPlacerRules.xml
+Loading package pin functions from /ecad/xilinxise_14.6/Vivado/2013.2/data/parts/xilinx/zynq/PinFunctions.xml...
+Loading package from /ecad/xilinxise_14.6/Vivado/2013.2/data/parts/xilinx/zynq/zynq/xc7z020/clg400/Package.xml
+Loading io standards from /ecad/xilinxise_14.6/Vivado/2013.2/data/./parts/xilinx/zynq/IOStandards.xml
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB8 0 RAMB16 0 RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 516.688 ; gain = 400.180
+---------------------------------------------------------------------------------
+
+No constraint files found.
+
+---------------------------------------------------------------------------------
+RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 4     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               10 Bit    Registers := 4     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---RAMs : 
+	              256 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module design4_recon 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 4     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               10 Bit    Registers := 4     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---RAMs : 
+	              256 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (\baseout_reg[3] ) is unused and will be removed from module extram.
+WARNING: [Synth 8-3332] Sequential element (\basein_reg[3] ) is unused and will be removed from module design4_recon.
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 516.688 ; gain = 400.180
+---------------------------------------------------------------------------------
+
+INFO: [Synth 8-3967] The signal basevec_reg was recognized as a RAM template but could not be mapped onto a dedicated block RAM for the following reason(s): The *asynchronous read* does not match a dedicated block HDL RAM template.
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: 
+|Module Name  |RTL Object |Inference Criteria|Size (depth X width)|Primitives  |Hierarchical Name   |
+|-------------|-----------|------------------|--------------------|------------|--------------------|
+|design4_recon|basevec_reg|Implied           |8 X 32              |RAM32M x 6  |design4_recon/ram__1|
+|-------------|-----------|------------------|--------------------|------------|--------------------|
+
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (\baseout_reg[3] ) is unused and will be removed from module extram__2.
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 536.734 ; gain = 420.227
+---------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 536.734 ; gain = 420.227
+---------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+Start control sets optimization
+INFO: [Synth 8-4428] Reached the limit for maximum flops that can be modified (20). You can increase this by setting the parameter controlSetsOptMaxFlops
+Finished control sets optimization. Modified 14 flops. Number of control sets: before: 6 after: 3
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 536.734 ; gain = 420.227
+---------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Final Netlist Cleanup
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 536.734 ; gain = 420.227
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
+-----+-----------------+------+--------+------+-----------------
+     |Item             |Errors|Warnings|Status|Description      
+-----+-----------------+------+--------+------+-----------------
+1    |multi_driven_nets|     0|       0|Passed|Multi driven nets
+-----+-----------------+------+--------+------+-----------------
+
+---------------------------------------------------------------------------------
+Start renaming generated instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 536.734 ; gain = 420.227
+---------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------
+Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 536.734 ; gain = 420.227
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Writing Synthesis Report
+---------------------------------------------------------------------------------
+Report BlackBoxes: 
+-----+-------------+---------
+     |BlackBox name|Instances
+-----+-------------+---------
+-----+-------------+---------
+Report Cell Usage: 
+-----+------+-----
+     |Cell  |Count
+-----+------+-----
+1    |BUFG  |    1
+2    |CARRY4|   12
+3    |LUT1  |    8
+4    |LUT2  |   35
+5    |LUT3  |    9
+6    |LUT4  |   30
+7    |LUT5  |    4
+8    |RAM32M|    6
+9    |FDRE  |   68
+10   |FDSE  |   16
+11   |IBUF  |   77
+12   |OBUF  |   34
+-----+------+-----
+Report Instance Areas: 
+-----+--------+------+-----
+     |Instance|Module|Cells
+-----+--------+------+-----
+1    |top     |      |  300
+-----+--------+------+-----
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 536.734 ; gain = 420.227
+---------------------------------------------------------------------------------
+
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Complete : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 536.734 ; gain = 420.227
+INFO: [Netlist 29-17] Analyzing 83 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Opt 31-138] Pushed 0 inverter(s).
+INFO: [Common 17-78] Attempting to get a license: Internal_bitstream
+WARNING: [Common 17-301] Failed to get a license: Internal_bitstream
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 6 instances were transformed.
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 6 instances
+
+Phase 0 | Netlist Checksum: 67a43ba8
+11 Infos, 8 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 796.375 ; gain = 644.672
+# write_checkpoint -force $outputDir/post_synth
+# report_utilization -file $outputDir/post_syth_util.rpt
+report_utilization: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.09 . Memory (MB): peak = 796.375 ; gain = 0.000
+# report_timing -sort_by group -max_paths 5 -path_type summary -file $outputDir/post_synth_timing.rpt
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: max, Constraints type: SDC.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 4 CPUs
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-78] ReportTimingParams: -max_paths 5 -nworst 1 -delay_type max -sort_by group.
+# opt_design
+Command: opt_design
+INFO: [Common 17-347] Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [Drc 23-27] Running DRC with 4 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.06 . Memory (MB): peak = 839.527 ; gain = 0.125
+
+Starting Logic Optimization Task
+Logic Optimization | Checksum: 62e2d8f5
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 8fa28b4e
+
+Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 839.527 ; gain = 0.000
+
+Phase 2 Constant Propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s).
+INFO: [Opt 31-10] Eliminated 8 cells.
+Phase 2 Constant Propagation | Checksum: 7322390f
+
+Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 839.527 ; gain = 0.000
+
+Phase 3 Sweep
+INFO: [Opt 31-12] Eliminated 36 unconnected nets.
+INFO: [Opt 31-11] Eliminated 0 unconnected cells.
+Phase 3 Sweep | Checksum: eee959e9
+
+Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 839.527 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Logic Optimization Task | Checksum: eee959e9
+
+Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.07 . Memory (MB): peak = 839.527 ; gain = 0.000
+
+Starting Power Optimization Task
+Ending Power Optimization Task | Checksum: eee959e9
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 839.527 ; gain = 0.000
+13 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+# power_opt_design
+Command: power_opt_design
+INFO: [Common 17-347] Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Begin power_opt_design optimizations | Netlist Checksum: e331d646
+INFO: [Pwropt 34-50] Optimizing power for module design4_recon ...
+Pre-processing: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 911.688 ; gain = 8.035
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+IDT: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 911.688 ; gain = 0.000
+Detect combinational loops Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 911.688 ; gain = 0.000
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Pwropt 34-187] Skipped ODC enables for 0 flops in bus-based analysis
+ODC: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 911.688 ; gain = 0.000
+Power optimization passes: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.02 . Memory (MB): peak = 911.688 ; gain = 8.035
+PSMgr Creation: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.03 . Memory (MB): peak = 912.691 ; gain = 9.039
+
+INFO: [Pwropt 34-77] Creating clock enable groups ...
+INFO: [Pwropt 34-96] Including small groups for filtering based on enable probabilities.
+ Done
+Grouping enables: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 912.691 ; gain = 0.000
+
+INFO: [Pwropt 34-26] Patching clock gating enable signals for design design4_recon ...
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 0 was updated to NO_CHANGE to save power.
+    Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+INFO: [Pwropt 34-100] Patcher adaptive clustering : original flop clusters 2 accepted clusters 0
+
+Number of Slice Registers augmented: 0 newly gated: 0 Total: 84
+Number of SRLs augmented: 0  newly gated: 0 Total: 0
+Number of BRAM Ports augmented: 0 newly gated: 0 Total Ports: 0
+Number of Flops added for Enable Generation: 0
+
+Flops dropped: 0/0 RAMS dropped: 0/0 Clusters dropped: 0/0 Enables dropped: 0
+Patching clock gating enables finished successfully.
+Patcher: Time (s): cpu = 00:00:00.29 ; elapsed = 00:00:00.29 . Memory (MB): peak = 912.691 ; gain = 0.000
+INFO: [Pwropt 34-30] Power optimization finished successfully.
+End power_opt_design optimizations | Netlist Checksum: e331d646
+Power optimization: Time (s): cpu = 00:00:00.42 ; elapsed = 00:00:00.39 . Memory (MB): peak = 912.691 ; gain = 73.164
+INFO: [Pwropt 34-198] Malloced memory gain at end of power optimization: 15975848 bytes
+
+Starting Logic Optimization Task
+Logic Optimization | Checksum: eee959e9
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: eee959e9
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 912.691 ; gain = 0.000
+
+Phase 2 Remap
+INFO: [Opt 31-9] Eliminated 0 cells and 0 terminals.
+Phase 2 Remap | Checksum: eee959e9
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 912.691 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Logic Optimization Task | Checksum: eee959e9
+
+Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 912.691 ; gain = 0.000
+18 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+power_opt_design completed successfully
+# place_design
+Command: place_design
+INFO: [Common 17-347] Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command place_design
+INFO: [Drc 23-27] Running DRC with 4 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 4 CPUs
+
+Phase 1 Placer Initialization
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 912.691 ; gain = 0.000
+
+Phase 1.1 Mandatory Logic Optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s).
+Phase 1.1 Mandatory Logic Optimization | Checksum: 10bb783a3
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 912.691 ; gain = 0.000
+
+Phase 1.2 Build Super Logic Region (SLR) Database
+Phase 1.2 Build Super Logic Region (SLR) Database | Checksum: 10bb783a3
+
+Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.05 . Memory (MB): peak = 912.691 ; gain = 0.000
+
+Phase 1.3 Add Constraints
+Phase 1.3 Add Constraints | Checksum: 10bb783a3
+
+Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.05 . Memory (MB): peak = 912.691 ; gain = 0.000
+
+Phase 1.4 Routing Based Site Exclusion
+Phase 1.4 Routing Based Site Exclusion | Checksum: 10bb783a3
+
+Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.05 . Memory (MB): peak = 912.691 ; gain = 0.000
+
+Phase 1.5 Build Macros
+Phase 1.5 Build Macros | Checksum: b2088473
+
+Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.07 . Memory (MB): peak = 912.691 ; gain = 0.000
+
+Phase 1.6 Implementation Feasibility check
+Phase 1.6 Implementation Feasibility check | Checksum: b2088473
+
+Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.09 . Memory (MB): peak = 912.691 ; gain = 0.000
+
+Phase 1.7 Pre-Place Cells
+Phase 1.7 Pre-Place Cells | Checksum: b2088473
+
+Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.10 . Memory (MB): peak = 912.691 ; gain = 0.000
+
+Phase 1.8 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.8 IO Placement/ Clock Placement/ Build Placer Device | Checksum: b2088473
+
+Time (s): cpu = 00:00:00.42 ; elapsed = 00:00:00.34 . Memory (MB): peak = 942.703 ; gain = 30.012
+
+Phase 1.9 Build Placer Netlist Model
+
+Phase 1.9.1 Place Init Design
+Phase 1.9.1 Place Init Design | Checksum: 650cbe3b
+
+Time (s): cpu = 00:00:00.44 ; elapsed = 00:00:00.36 . Memory (MB): peak = 942.703 ; gain = 30.012
+Phase 1.9 Build Placer Netlist Model | Checksum: 650cbe3b
+
+Time (s): cpu = 00:00:00.44 ; elapsed = 00:00:00.36 . Memory (MB): peak = 942.703 ; gain = 30.012
+
+Phase 1.10 Constrain Clocks/Macros
+
+Phase 1.10.1 Constrain Global/Regional Clocks
+Phase 1.10.1 Constrain Global/Regional Clocks | Checksum: 650cbe3b
+
+Time (s): cpu = 00:00:00.45 ; elapsed = 00:00:00.37 . Memory (MB): peak = 942.703 ; gain = 30.012
+Phase 1.10 Constrain Clocks/Macros | Checksum: 650cbe3b
+
+Time (s): cpu = 00:00:00.45 ; elapsed = 00:00:00.37 . Memory (MB): peak = 942.703 ; gain = 30.012
+Phase 1 Placer Initialization | Checksum: 650cbe3b
+
+Time (s): cpu = 00:00:00.45 ; elapsed = 00:00:00.37 . Memory (MB): peak = 942.703 ; gain = 30.012
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: a75ae4a9
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.76 . Memory (MB): peak = 942.703 ; gain = 30.012
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: a75ae4a9
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.76 . Memory (MB): peak = 942.703 ; gain = 30.012
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 13184809f
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.79 . Memory (MB): peak = 942.703 ; gain = 30.012
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 11e5ba442
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.80 . Memory (MB): peak = 942.703 ; gain = 30.012
+
+Phase 3.4 Timing Path Optimizer
+Phase 3.4 Timing Path Optimizer | Checksum: 11e5ba442
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.80 . Memory (MB): peak = 942.703 ; gain = 30.012
+
+Phase 3.5 Commit Small Macros & Core Logic
+Phase 3.5 Commit Small Macros & Core Logic | Checksum: 7bea78ae
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.85 . Memory (MB): peak = 972.840 ; gain = 60.148
+
+Phase 3.6 Re-assign LUT pins
+Phase 3.6 Re-assign LUT pins | Checksum: 7bea78ae
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.86 . Memory (MB): peak = 972.840 ; gain = 60.148
+Phase 3 Detail Placement | Checksum: 7bea78ae
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.86 . Memory (MB): peak = 972.840 ; gain = 60.148
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Placement Cleanup
+Phase 4.1 Post Placement Cleanup | Checksum: 7bea78ae
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.86 . Memory (MB): peak = 972.840 ; gain = 60.148
+
+Phase 4.2 Placer Reporting
+Phase 4.2 Placer Reporting | Checksum: 7bea78ae
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.86 . Memory (MB): peak = 972.840 ; gain = 60.148
+
+Phase 4.3 Final Placement Cleanup
+Phase 4.3 Final Placement Cleanup | Checksum: fffffffff4d345df
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.86 . Memory (MB): peak = 972.840 ; gain = 60.148
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: fffffffff4d345df
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.86 . Memory (MB): peak = 972.840 ; gain = 60.148
+Ending Placer Task | Checksum: 3451dba9
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.87 . Memory (MB): peak = 972.840 ; gain = 60.148
+7 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+# write_checkpoint -force $outputDir/post_place
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.16 ; elapsed = 00:00:00.18 . Memory (MB): peak = 972.840 ; gain = 0.000
+# phys_opt_design
+Command: phys_opt_design
+INFO: [Common 17-347] Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Vivado_Tcl 4-235] No timing constraint found. The netlist was not modified.
+3 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+# route-design
+invalid command name "route-design"
+    while executing
+"route-design"
+    (file "recon.tcl" line 21)
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 13 13:16:39 2018...
